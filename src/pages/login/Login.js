@@ -23,7 +23,7 @@ export function Login() {
 
      const login = (data) => {
           console.log(data)
-          axios.post("http://localhost:3001/auth/login", data).then((response) => {
+          axios.post("https://neighbourhood-server.vercel.app/auth/login", data).then((response) => {
             if (response.data.error) {
               alert(response.data.error);
             } else {
