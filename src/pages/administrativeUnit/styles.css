@@ -1,0 +1,36 @@
+.item-div{
+     width: 60vw;
+     margin-left: 50px;
+     margin-right: 20px;
+     margin-bottom: 20px;
+}
+
+.info-div{
+     width: 40vw;
+}
+
+.button-css-remove{
+     border: none;
+     background: none;
+}
+
+.button-css-remove:hover{
+     opacity: 0.6;
+}
+
+.form-post {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 100%;
+}
+
+.form-post #inputCreatePost {
+     height: 40px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     border: 2px solid grey;
+     border-radius: 5px;
+     padding-left: 10px;
+     font-size: 20px;
+}

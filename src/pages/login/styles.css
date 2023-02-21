@@ -1,0 +1,85 @@
+.footer {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     height: 50px;
+     display: flex;
+}
+
+.layout {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.trademark{
+     margin-right: 5px;
+}
+
+.login-link {
+     text-decoration: none;
+     margin-left: 5px;
+}
+
+.hood-title {
+     display: flex;
+     justify-content: center;
+     font-family: 'Nunito Sans', sans-serif;
+}
+
+.formContainer {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 500px;
+     height: auto;
+     padding: 20px;
+}
+
+.formContainer #inputCreatePost {
+     height: 40px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     border: 2px solid grey;
+     border-radius: 5px;
+     padding-left: 10px;
+     font-size: 20px;
+}
+
+.validation-alert{
+     color: #Be2528;
+     margin-bottom: 10px;
+     margin-top: -10px;
+}
+
+.select-field{
+     height: 40px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     border: 2px solid grey;
+     border-radius: 5px;
+     padding-left: 10px;
+     font-size: 20px;
+}
+
+.formContainer button {
+     margin-top: 15px;
+     height: 40px;
+     border: none;
+     background-color: #167219;
+     opacity: 0.5;
+     border-radius: 5px;
+     color: white;
+}
+
+.formContainer button:hover {
+     cursor: pointer;
+     opacity: 1;
+}
+
+.link-footer{
+     margin-right: 15px;
+     text-decoration: none;
+}
