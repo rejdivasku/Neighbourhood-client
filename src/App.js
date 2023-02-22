@@ -20,7 +20,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("https://neighbourhood-server.vercel.app/auth/auth", {
+      .get("https://neighbourhood-server.onrender.com/auth/auth", {
         headers: {
           accessToken: localStorage.getItem("accessToken"),
         },

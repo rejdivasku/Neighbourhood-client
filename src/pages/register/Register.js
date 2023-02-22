@@ -28,7 +28,7 @@ export function Register() {
 
      const onSubmit = (data) => {
           console.log(data)
-          axios.post("https://neighbourhood-server.vercel.app/auth", data).then(() => {
+          axios.post("https://neighbourhood-server.onrender.com/auth", data).then(() => {
                navigate(`/login`)
           });
      };

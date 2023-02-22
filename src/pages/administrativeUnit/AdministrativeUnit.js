@@ -66,7 +66,7 @@ export function AdministrativeUnit() {
 
      const getList = async () => {
           setIsloading(true)
-          let list = await axios.get(`https://neighbourhood-server.vercel.app/post/byAdmnsId/${id}`)
+          let list = await axios.get(`https://neighbourhood-server.onrender.com/post/byAdmnsId/${id}`)
           if (list.status === 200) {
                setAdmnsPosts(list.data);
           } else {
@@ -77,7 +77,7 @@ export function AdministrativeUnit() {
 
      const getUnitData = async () => {
           setIsloading(true)
-          let list = await axios.get(`https://neighbourhood-server.vercel.app/admns/admnsId/${id}`)
+          let list = await axios.get(`https://neighbourhood-server.onrender.com/admns/admnsId/${id}`)
           if (list.status === 200) {
                setAdmnsInfo(list.data[0]);
           } else {
@@ -90,7 +90,7 @@ export function AdministrativeUnit() {
           console.log(data)
           setIsloading(true)
           if (isEdit) {
-               axios.put("https://neighbourhood-server.vercel.app/post/updatePost", {
+               axios.put("https://neighbourhood-server.onrender.com/post/updatePost", {
                     ...data, id: editItemId
                },
                     {
@@ -108,7 +108,7 @@ export function AdministrativeUnit() {
                          }
                     });
           } else {
-               axios.post("https://neighbourhood-server.vercel.app/post", data).then((response) => {
+               axios.post("https://neighbourhood-server.onrender.com/post", data).then((response) => {
                     if (response.data.error) {
                          alert(response.data.error);
                     } else {
@@ -126,7 +126,7 @@ export function AdministrativeUnit() {
      console.log(authState)
      const deletePost = () => {
           setIsloading(true)
-          axios.delete(`https://neighbourhood-server.vercel.app/post/${deleteItem}`, {
+          axios.delete(`https://neighbourhood-server.onrender.com/post/${deleteItem}`, {
                headers: { accessToken: localStorage.getItem("accessToken") },
           })
                .then(() => {
